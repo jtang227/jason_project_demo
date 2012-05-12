@@ -1,4 +1,7 @@
-<h1><center>Welcome to my first rails webpage!!</center><h1>
+<h1>
+  <center>Welcome to my first rails webpage!!<br/>
+  <img src="rails.png" name="icon">
+</center><h1>
 <div>
   Name: <input type="text" name="name"><br/>
   Email: <input type="text" name="email"><br/>
@@ -6,13 +9,6 @@
   <input type="submit" value="Submit">
 </div>
 
-require 'mysql'
-
-mysql = Mysql.init()
-mysql.connect('localhost')
-
-results = mysql.query("SELECT now();")
-
-results.each{|row|; puts row;}
-
-mysql.close()
+<div>
+  <%=  %>
+</div>
