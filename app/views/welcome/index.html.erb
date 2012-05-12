@@ -5,3 +5,14 @@
   Phone: <input type="text" name="phone"><br/>
   <input type="submit" value="Submit">
 </div>
+
+require 'mysql'
+
+mysql = Mysql.init()
+mysql.connect('localhost')
+
+results = mysql.query("SELECT now();")
+
+results.each{|row|; puts row;}
+
+mysql.close()
